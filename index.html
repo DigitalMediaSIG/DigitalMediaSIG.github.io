@@ -30,7 +30,7 @@
     h3 {
       /*text-align:center;*/
       font-size:100%;
-    	color: rgb(100,220,220);
+    	color: #16da9c;
     	letter-spacing: .5em;
     }
     h4 {
@@ -46,7 +46,7 @@
       margin-top: 20px;
     } 
     .glitch {
-    	color: white;
+    	color: black;
     	font-size: 3em;
     	letter-spacing: .3em;
     }
@@ -67,10 +67,10 @@
       border-bottom: 2px solid #999;
     }
     h1 {
-      text-shadow:1px 1px 0px #f0f, -1px -1px 0 #0ff;
+      /*text-shadow:1px 1px 0px #f0f, -1px -1px 0 #0ff;*/
       font-size:100%;
       /*text-align:center;*/
-      text-shadow:2px 3px 0px #f0f, -2px -2px 0 #0ff;
+      /*text-shadow:2px 3px 0px #f0f, -2px -2px 0 #0ff;*/
       word-wrap: break-word;
     }
     h2 {
@@ -83,9 +83,9 @@
       }
     }
     .btn-warning {
-      color: black !important;
-      border-color: #FF9800;
-      background-color: #FF9800;
+      color: white !important;
+      border-color: black;
+      background-color: black;
       box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
     }
     .btn-register {
@@ -164,15 +164,15 @@
 <body id="page-top">
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light static-top" id="mainNav">
+  <nav class="navbar navbar-expand navbar-light static-top flex-nowrap" id="mainNav">
     <div class="container">
       <div class="col-lg-8 mx-auto">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger navbar-iso" href="#invitedspeakers">About</a>
+            <a class="nav-link js-scroll-trigger navbar-iso" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger navbar-iso" href="#invitedspeakers">Events</a>
+            <a class="nav-link js-scroll-trigger navbar-iso" href="#events">Events</a>
           </li>
         </ul>
       </div>
@@ -183,7 +183,8 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <h1 class="glitch">Media in the Digital Age</h2>
+          <h1 class="glitch">Media <span style="font-size: 0.5em">in the</span></h1> 
+          <h1 class="glitch">Digital Age</h2>
           <h3 class="sub">Special Interest Group</h3>
         </div>
       </div>
@@ -199,7 +200,7 @@
     <g class="parallax">
     <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" stroke="rgba(0,0,0,0.7" stroke-width="0.25"/>
     <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" stroke="rgba(0,0,0,0.5" stroke-width="0.5"/>
-    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" stroke="rgba(0,0,0,0.3" stroke-width="0.75"/>
+    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" stroke="rgba(22,218,156,0.3" stroke-width="0.75"/>
     <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" stroke="rgba(0,0,0,0.6)" stroke-width="1"/>
     </g>
     </svg>
@@ -218,6 +219,127 @@
     </div>
   </section>
 	
+  <section id="events">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>Events</h2>
+          <ul>
+            <li><a href="https://digitalMediaSIG.github.io/Mediate2020">MEDIATE: the Social and News Media Misinformation Workshop</a> at AAAI ICWSM</li>
+            <li><a href="https://digitalMediaSIG.github.io/Framing2020">Framing Colloquium</a> at CMSC</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="organizers">
+    <div class="container">
+      <div class="col-lg-8 mx-auto">
+        <h2 class="mb-5">Organizers</h2>
+        <div class="row">
+          <div class="col-md-4 col-lg-4 mb-5">
+            <div class="px-4 text-center">
+              <img src="assets/helena.jpeg" class="rounded-circle img-center img-fluid shadow shadow-lg--hover" style="width: 200px;" alt="image">
+              <div class="pt-4 text-center">
+                <h5 class="title same-space">
+                  <span class="d-block mb-1">Elena <br/> Kochkina</span>
+                  <small class="h6 text-muted">Alan Turing Institute</small>
+                </h5>
+                <div>
+                  <a href="http://twitter.com/Elena_Kochkina" class="btn btn-warning btn-icon-only rounded-circle">
+                    <i class="fa fa-twitter"></i>
+                  </a>			
+                  <a href="mailto:ekochkina@turing.ac.uk" class="btn btn-warning btn-icon-only rounded-circle">
+                    <i class="fa fa-envelope"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-4 mb-5">
+            <div class="px-4 text-center">
+              <img src="assets/marya.jpg" class="rounded-circle img-center img-fluid shadow shadow-lg--hover" style="width: 200px;" alt="image">
+              <div class="pt-4 text-center">
+                <h5 class="title same-space">
+                  <span class="d-block mb-1">Marya <br/> Bazzi</span>
+                  <small class="h6 text-muted"> Alan Turing Institute</small>
+                </h5>
+                <div>
+                  <a href="http://twitter.com/maryabazzi" class="btn btn-warning btn-icon-only rounded-circle">
+                    <i class="fa fa-twitter"></i>
+                  </a>			
+                  <a href="mailto:mbazzi@turing.ac.uk" class="btn btn-warning btn-icon-only rounded-circle">
+                    <i class="fa fa-envelope"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-4 mb-5">
+            <div class="px-4 text-center">
+              <img src="assets/maria.jpg" class="rounded-circle img-center img-fluid shadow shadow-lg--hover" style="width: 200px;" alt="image">
+              <div class="pt-4 text-center">
+                <h5 class="title same-space">
+                  <span class="d-block mb-1">Maria <br/> Liakata</span>
+                  <small class="h6 text-muted">Alan Turing Institute</small>
+                </h5>
+                <div>
+                  <a href="http://twitter.com/xrysoflhs" class="btn btn-warning btn-icon-only rounded-circle">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                  <a href="mailto:mliakata@turing.ac.uk" class="btn btn-warning btn-icon-only rounded-circle">
+                    <i class="fa fa-envelope"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">            
+          <div class="col-md-4 col-lg-4 mb mb-0 ml-auto">
+            <div class="px-4 text-center">
+              <img src="assets/psmeros.jpg" class="rounded-circle img-center img-fluid shadow shadow-lg--hover" style="width: 200px;" alt="image">
+              <div class="pt-4 text-center" style="margin-bottom: 40px;">
+                <h5 class="title same-space">
+                  <span class="d-block mb-1">Panayiotis <br/> Smeros</span>
+                  <small class="h6 text-muted">EPFL</small>
+                </h5>
+                <div>
+                  <a href="http://twitter.com/psmeros" class="btn btn-warning btn-icon-only rounded-circle">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                  <a href="mailto:panayiotis.smeros@epfl.ch" class="btn btn-warning btn-icon-only rounded-circle">
+                    <i class="fa fa-envelope"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+           <div class="col-md-4 col-lg-4 mb-0 mr-auto">
+            <div class="px-4 text-center">
+              <img src="assets/jay.jpg" class="rounded-circle img-center img-fluid shadow shadow-lg--hover" style="width: 200px;" alt="image">
+              <div class="pt-4 text-center">
+                <h5 class="title same-space">
+                  <span class="d-block mb-1">Jérémie <br/> Rappaz</span>
+                  <small class="h6 text-muted">EPFL</small>
+                </h5>
+                <div>
+                  <a href="http://twitter.com/jrappaz" class="btn btn-warning btn-icon-only rounded-circle">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                  <a href="mailto:jeremie.rappaz@epfl.ch" class="btn btn-warning btn-icon-only rounded-circle">
+                    <i class="fa fa-envelope"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
 
   <!-- Footer -->
   <footer class="py-5 ">
