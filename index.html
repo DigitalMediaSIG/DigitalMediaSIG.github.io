@@ -17,6 +17,7 @@
 
   <!-- Custom styles for this template -->
   <link href="css/scrolling-nav.css" rel="stylesheet">
+  <link href="css/wave.css" rel="stylesheet">
 
   <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
  
@@ -27,7 +28,7 @@
 	      font-family: 'Montserrat', sans-serif;
     }
     h3 {
-      text-align:center;
+      /*text-align:center;*/
       font-size:100%;
     	color: rgb(100,220,220);
     	letter-spacing: .5em;
@@ -55,8 +56,6 @@
       }
     }
     .header-bg {
-      padding: 256px 0 200px !important; 
-      margin-top: -60px;
       background-position-x: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -70,7 +69,7 @@
     h1 {
       text-shadow:1px 1px 0px #f0f, -1px -1px 0 #0ff;
       font-size:100%;
-      text-align:center;
+      /*text-align:center;*/
       text-shadow:2px 3px 0px #f0f, -2px -2px 0 #0ff;
       word-wrap: break-word;
     }
@@ -105,6 +104,11 @@
     }
     .navbar-dark .navbar-nav .nav-link {
         color: rgba(0,0,0) !important;
+    }
+    .navbar-iso {
+      color: black !important;
+      font-weight: bolder;
+      font-size: 1.2em;
     }
     .infobox {
       border: 3px dashed black;
@@ -162,17 +166,13 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light static-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" style="font-size: 2em;" href="#page-top"><b>M</b></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
+      <div class="col-lg-8 mx-auto">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#invitedspeakers">About</a>
+            <a class="nav-link js-scroll-trigger navbar-iso" href="#invitedspeakers">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#invitedspeakers">Events</a>
+            <a class="nav-link js-scroll-trigger navbar-iso" href="#invitedspeakers">Events</a>
           </li>
         </ul>
       </div>
@@ -180,10 +180,31 @@
   </nav>
 
   <header class="header-bg">
-    <div class="container text-center">
-      <h1 class="glitch">Media in the Digital Age</h2>
-      <h3 class="sub">Special Interest Group</h3>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h1 class="glitch">Media in the Digital Age</h2>
+          <h3 class="sub">Special Interest Group</h3>
+        </div>
+      </div>
     </div>
+
+    <!--Waves Container-->
+    <div style="margin-top: 100px">
+    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+    <defs>
+    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+    </defs>
+    <g class="parallax">
+    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" stroke="rgba(0,0,0,0.7" stroke-width="0.25"/>
+    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" stroke="rgba(0,0,0,0.5" stroke-width="0.5"/>
+    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" stroke="rgba(0,0,0,0.3" stroke-width="0.75"/>
+    <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" stroke="rgba(0,0,0,0.6)" stroke-width="1"/>
+    </g>
+    </svg>
+    </div>
+    <!--Waves end-->
   </header>
 
   <section id="overview">
