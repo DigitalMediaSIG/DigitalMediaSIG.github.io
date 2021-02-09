@@ -27,6 +27,13 @@
     body {
 	      font-family: 'Montserrat', sans-serif;
     }
+    ul {
+      list-style-type: none;
+    }
+    li  {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
     h3 {
       /*text-align:center;*/
       font-size:100%;
@@ -147,7 +154,12 @@
     }
     .dropdown-item {
         color: #000;
-    } 
+    }
+    .event {
+      border-left: 3.5px solid black;
+      border-radius: 3px;
+      padding-left: 15px;
+    }
     </style>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-VT0DFRW564"></script>
@@ -223,10 +235,26 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <h2>Events</h2>
+          <h2>Recent and Upcoming Events</h2>
           <ul>
-            <li><a href="https://digitalMediaSIG.github.io/Mediate2020">MEDIATE: the Social and News Media Misinformation Workshop</a> at AAAI ICWSM</li>
-            <li><a href="https://digitalMediaSIG.github.io/Framing2020">Framing Colloquium</a> at CMSC</li>
+            <li class="event">
+              <div><b>MEDIATE 2021</b></div>
+              <div>xx.08.2021</div>
+              <a href="https://digitalMediaSIG.github.io/Mediate2021">MEDIATE 2021</a> at AAAI ICWSM
+            </li>
+
+            <li class="event">
+              <div><b>Narrative Framing Colloquium</b></div>
+              <div>11.12.2020</div>
+              <a href="https://digitalMediaSIG.github.io/Framing2020">Framing Colloquium</a> at CMSC
+            </li>
+
+            <li class="event">
+              <div><b>MEDIATE 2020</b></div>
+              <div>06.08.2020</div>
+              <a href="https://digitalMediaSIG.github.io/Mediate2020">MEDIATE 2020</a> at AAAI ICWSM
+            </li>
+
           </ul>
         </div>
       </div>
